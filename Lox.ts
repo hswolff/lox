@@ -6,7 +6,7 @@ export default class Lox {
 
   static main(args = Deno.args) {
     if (args.length > 1) {
-      println('Usage: jlox [script]');
+      println('Usage: dlox [script]');
       Deno.exit(64);
     } else if (args.length === 1) {
       Lox.runFile(args[0]);
