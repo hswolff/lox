@@ -3,7 +3,7 @@ import Token from './Token.ts';
 import TokenType from './TokenType.ts';
 import { println } from './utils.ts';
 
-class AstPrinter implements Expr.Visitor<string> {
+export default class AstPrinter implements Expr.Visitor<string> {
   static main() {
     const expression = new Expr.Binary(
       new Expr.Unary(
@@ -51,4 +51,4 @@ class AstPrinter implements Expr.Visitor<string> {
   }
 }
 
-AstPrinter.main();
+// AstPrinter.main();
